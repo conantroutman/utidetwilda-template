@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,KAAU;EACvB,cAAc,EAAE,KAAK;CACxB;;AACD,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,WAAW;EAClC,GAAG,EAAE,GAAG;CAMX;;AATD,AAKI,QALI,CAKJ,GAAG,CAAC;EACA,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,KAAK;CAC1B",
+    "sources": [
+        "galleri.scss"
+    ],
+    "names": [],
+    "file": "galleri.css"
+}

@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+main {
+    padding-top: 75 + 100px;
+}
+
+article {
+    padding-bottom: 100px;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        margin-bottom: 1.75em;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1.25fr;
+    gap: 10em;
+
+    h1 {
+        //text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .description {
+        //margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .infobox {
+        background-color: $background-color;
+        padding: 4em;
+
+        ul, p {
+            margin-bottom: 2em;
+        }
+    }
+}
