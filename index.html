@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="referrer" content="strict-origin" />
     <meta name="description" content="Uti det Wilda är ett kreativt matäventyr. Att äta hos oss är något utöver det vanliga. Du kan förvänta dig god och vällagad mat – men också ovanliga ingredienser från skog och trädgård som du kanske inte ätit förr; vilda örter, blad och blommor. Kött och fisk från närliggande sjöar och betesmarker tillagas vid elden och äts utomhus.">
     <title>Uti Det Wilda</title>
@@ -21,12 +21,12 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Hem</a></li>
-                    <li><a href="middagar.html">Middagar</a></li>
-                    <li><a href="vandringar.html">Vandringar</a></li>
-                    <li><a href="boka.html">Boka</a></li>
-                    <li><a href="">Kontakt</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="galleri.html">Bildgalleri</a></li>
+                    <li><a href="middagar.html" href="_blank">Middagar</a></li>
+                    <li><a href="vandringar.html" href="_blank">Vandringar</a></li>
+                    <li><a data-scroll href="#boka">Boka</a></li>
+                    <li><a data-scroll href="#footer">Kontakt</a></li>
+                    <!--<li><a href="">Press</a></li>-->
+                    <!--<li><a href="galleri.html">Bildgalleri</a></li>-->
                 </ul>
                 <ul class="nav-social">
                     <li><a href="https://www.facebook.com/wilda.utidetwilda" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
@@ -35,91 +35,186 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section class="hero">
-            <div class="logo">
-                <img src="images/wildas_svart.svg" alt="">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/wildas_svart.svg" alt="">
+                </div>
+    
+                <h1>En underbar matupplevelse vid sjön Unden</h1>
+    
+                <a data-scroll href="#boka" class="cta cta-primary">Boka nu</a>
+    
+                <svg xmlns="http://www.w3.org/2000/svg" id="scroll-arrow" width="24" height="27.186" viewBox="0 0 24 27.186">
+                    <g id="scroll-arrow-group" data-name="Group 1362" transform="translate(-948 -1019.477)">
+                      <path id="scroll-arrow1" class="cls-1" d="M9.586,12,.5,2.921A1.708,1.708,0,0,1,.5.5,1.73,1.73,0,0,1,2.933.5l10.29,10.282a1.712,1.712,0,0,1,.05,2.365L2.94,23.5A1.715,1.715,0,0,1,.511,21.077Z" transform="translate(972 1032.941) rotate(90)"/>
+                      <path id="scroll-arrow2" class="cls-1" d="M9.586,12,.5,2.921A1.708,1.708,0,0,1,.5.5,1.73,1.73,0,0,1,2.933.5l10.29,10.282a1.712,1.712,0,0,1,.05,2.365L2.94,23.5A1.715,1.715,0,0,1,.511,21.077Z" transform="translate(972 1019.477) rotate(90)"/>
+                    </g>
+                </svg>
             </div>
-            <h1>En underbar matupplevelse vid sjön Unden</h1>
+            
 
-            <a href="boka.html" class="cta cta-primary">Boka nu</a>
-
-            <svg xmlns="http://www.w3.org/2000/svg" id="scroll-arrow" width="24" height="27.186" viewBox="0 0 24 27.186">
-                <g id="scroll-arrow-group" data-name="Group 1362" transform="translate(-948 -1019.477)">
-                  <path id="scroll-arrow1" class="cls-1" d="M9.586,12,.5,2.921A1.708,1.708,0,0,1,.5.5,1.73,1.73,0,0,1,2.933.5l10.29,10.282a1.712,1.712,0,0,1,.05,2.365L2.94,23.5A1.715,1.715,0,0,1,.511,21.077Z" transform="translate(972 1032.941) rotate(90)"/>
-                  <path id="scroll-arrow2" class="cls-1" d="M9.586,12,.5,2.921A1.708,1.708,0,0,1,.5.5,1.73,1.73,0,0,1,2.933.5l10.29,10.282a1.712,1.712,0,0,1,.05,2.365L2.94,23.5A1.715,1.715,0,0,1,.511,21.077Z" transform="translate(972 1019.477) rotate(90)"/>
-                </g>
-            </svg>
             <div class="background">
-                <div class="background-image rellax" data-rellax-speed="-3" />
+                <div class="background-image rellax" data-rellax-speed="-4" />
+            </div>
+
+        </section>
+        <section class="welcome">
+            <div class="container">
+                <article class=".reveal">
+                    <h1>Välkommen till Uti det Wilda!</h1>
+                    <p>Uti det Wilda är ett kreativt matäventyr. Att äta hos oss är något utöver det vanliga. Du kan förvänta dig god och vällagad mat – men också ovanliga ingredienser från skog och trädgård som du kanske inte ätit förr; vilda örter, blad och blommor. Kött och fisk från närliggande sjöar och betesmarker tillagas vid elden och äts utomhus.</p>
+                </article>
             </div>
         </section>
-        <article class="section welcome">
-            <div class="container">
-                <h1>Välkommen till Uti det Wilda</h1>
-                <p>Uti det Wilda är ett kreativt matäventyr. Att äta hos oss är något utöver det vanliga. Du kan förvänta dig god och vällagad mat – men också ovanliga ingredienser från skog och trädgård som du kanske inte ätit förr; vilda örter, blad och blommor. Kött och fisk från närliggande sjöar och betesmarker tillagas vid elden och äts utomhus.</p>
-                <hr />
-            </div>
-        </article>
-        <!--<section class="section offers">
-            <div class="container">
-                <h2>Vad vi erbjuder</h2>
 
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-head">
-                            <img src="images/card-middag.png" alt="Gäster som njuter av en wildamiddag">
+        <div class="divider"></div>
+
+        <section class="offers">
+            <div class="container">
+                <article>
+                    <h1 class="section-heading">Vad vi erbjuder</h1>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-head">
+                                <picture>
+                                    <img src="images/middag.jpeg" alt="">
+                                </picture>
+                            </div>
+                            <div class="card-body">
+                                <h3>Wildamiddagar</h3>
+                                <p><strong>Sommaren 2021</strong> erbjuder vi en serie bokningsbara wildamiddagar. Middagarna äger rum utomhus och går att kombinera med vandringar eller andra utflykter i närområdet.</p>
+                                <a href="middagar.html" target="_blank" class="cta cta-primary">Läs mer</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h3>Wildamiddagar</h3>
-                            <p></p>
-                            <div class="cta cta-primary">Boka</div>
+                        <div class="card">
+                            <div class="card-head">
+                                <picture>
+                                    <img src="images/skogsol.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="card-body">
+                                <h3>Wildavandringar</h3>
+                                <p><strong>Våren 2021</strong> erbjuder vi avkopplande vandringar med efterföljande trerätters middag vid Undens strand.</p>
+                                <a href="vandringar.html" target="_blank" class="cta cta-primary">Läs mer</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-head">
-                            <img src="images/card-vandring.png" alt="Den vackra naturen där vi kommer att vandra">
-                        </div>
-                        <div class="card-body">
-                            <h3>Wildavandringar</h3>
-                            <p></p>
-                            <div class="cta cta-primary">Boka</div>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
-        </section>-->
+        </section>
+
+        <!--
         <section>
-            <div class="container grid">
-                <article class="grid-item">
+            <div class="grid">
+
+                <article class="grid-item grid-item1">
                     <h2>Wildamiddagar</h2>
                     <p><strong>Sommaren 2021</strong> erbjuder vi en serie bokningsbara wildamiddagar. Middagarna äger rum utomhus och går att kombinera med vandringar eller andra utflykter i närområdet.</p>
+                    <div class="price-area">
+                        <p>Pris: <span class="price">950 kr</span></p>
+                    </div>
                     <a href="middagar.html" class="cta cta-primary">Läs mer</a>
                 </article>
                 
-                <div class="grid-item">
-                    <img src="images/middag.jpeg" alt="">
+                <div class="grid-item grid-item2">
+                    <img src="images/middag.jpeg" alt="" loading="lazy">
                 </div>
-                <div class="grid-item"></div>
-                <article class="grid-item">
+
+                <div class="grid-item grid-item4">
+                    <img src="images/skogsväg.jpg" alt="" loading="lazy">
+                </div>
+
+                <article class="grid-item grid-item3">
                     <h2>Wildavandringar</h2>
                     <p><strong>Våren 2021</strong> erbjuder vi avkopplande vandringar med efterföljande trerätters middag vid Undens strand.</p>
+                    <div class="price-area">
+                        <p>Pris: <span class="price">600 kr</span></p>
+                    </div>
                     <a href="utflykter.html" class="cta cta-primary">Läs mer</a>
                 </article>
-                <article class="grid-item">
+
+                <article class="grid-item grid-item5">
                     <h2>Vilka är vi?</h2>
                     <p>Wilda är <strong>Helena Hallerhed</strong> och <strong>Sandra Isaksson</strong>. Med ett förflutet i matlagning, utbildning, musik, formgivning och äventyr är vi förenade av våra Hallerudsrötter och av ett genuint intresse för högkvalitativ, närproducerad mat och naturliga wilda ingredienser.</p>
+                    <p>Vår barndom, vår uppväxt och vårt ursprung avspeglas i vår mat. Vi tror på att göra all vår mat från start med så få genvägar som möjligt. Vi använder lokalt producerad mat, vilda örter, blommor och växter. Kött och grönt från lokala producenter och fisk från närliggande sjöar.</p>
                 </article>
-                <div class="grid-item">
-                    <img src="images/sandrahelena.jpg" alt="Helena Hallerhed och Snadra Isaksson">
+
+                <div class="grid-item grid-item6">
+                    <img src="images/sandrahelena.jpg" alt="Helena Hallerhed och Sandra Isaksson" loading="lazy">
                 </div>
+
             </div>
         </section>
+        -->
+        <!--
+        <section id="priser">
+            <div class="container">
+                <article>
+
+                    <h1 class="section-heading">Våra priser</h1>
+
+                    <div class="prices-grid">
+
+                        <div>
+                            <h3>Wildamiddag</h3>
+                            <p class="price">950 kr</p>
+                        </div>
+
+                        <div>
+                            <h3>Wildavandring</h3>
+                            <p class="price">600 kr</p>
+                        </div>
+
+                    </div>
+
+                </article>
+            </div>
+        </section>
+        -->
+
+        <div class="divider"></div>
+        
+        <section id="boka">
+            <div class="container">
+                <article>
+                    <h1 class="section-heading">Boka</h1>
+                    <p>För bokning, kontakta oss via mail, telefon eller meddela oss på Facebook.</p>
+                    <ul class="booking-methods">
+                        <li class="mobile-only"><a href="tel:+4673591866" target="_blank" class="cta" ><i class="fas fa-phone"></i>Boka via telefon</a></li>
+                        <li><a href="mailto:info@utidetwilda.se" target="_blank" class="cta"><i class="fas fa-envelope"></i>Boka via mail</a></li>
+                        <li><a href="https://m.me/wilda.utidetwilda" target="_blank" class="cta"><i class="fab fa-facebook-messenger"></i>Boka via Facebook</a></li>
+                    </ul>
+                    <div>
+                        <p>Betalning sker via Swish eller bankgiro direkt efter att bokningen är bekräftat.</p>
+                        <p>Märk betalningen <strong>"Wildamiddag"</strong>, eller <strong>"Wildavandring"</strong>.</p>
+                        <p>Obetald bokning tas bort efter 48 timmar. (se bokningsvillkor)</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <div class="container">
+                <article>
+                    <h1 class="section-heading">Hitta till oss</h1>
+                    <p class="centered">Vårt utomhuskök och sommarrestaurang ligger vackert beläget intill vattnet vid sjön Unden, <strong>Hallerudsund</strong>; i utkanten av Töreboda kommun, nära Tivedens Nationalpark.</p>
+                </article>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069.497467983565!2d14.38422411632574!3d58.755267281461634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465b994f66628fb9%3A0xd5f96ab18c6b7ca0!2sUti%20Det%20Wilda!5e0!3m2!1ssv!2sse!4v1614206543290!5m2!1ssv!2sse" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        
     </main>
-    <footer>
+
+    <footer id="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="contact-info">
+                <address class="contact-info">
                     <h2>Kontakt</h2>
     
                     <h4>Telefon</h4>
@@ -130,7 +225,7 @@
     
                     <h4>Adress</h4>
                     <p>Hallerudsund 18, 542 92 Älgarås</p>
-                </div>
+                </address>
                 <div class="footer-social">
                     <h2>Följ oss</h2>
                     <ul>
@@ -146,10 +241,19 @@
             <p class="copyright">© 2021 Uti Det Wilda</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.min.js" integrity="sha512-L56hqljAjZhvB9f32klSO2ltXUlKbaOY2KdlNLOdzxJtl0jNvNQFKTP3u0MIFUP3mXTzYdy7KCaUSvi7QBWxNg==" crossorigin="anonymous"></script>
     <script>
         const rellax = new Rellax('.rellax');
+        const scroll = new SmoothScroll('a[href*="#"]');
+
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            document.querySelector('.mobile-only').style.display = 'block';
+        }else{
+            document.querySelector('.mobile-only').style.display = 'none';
+        }
     </script>
 </body>
 </html>
