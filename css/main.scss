@@ -13,6 +13,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 4rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -24,7 +25,7 @@ a:hover {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   max-width: 75ch;
 }
 
@@ -37,16 +38,6 @@ section {
   article {
     padding-top: 4em;
     padding-bottom: 6em;
-  }
-
-  &:nth-of-type(even):not(:first-child) {
-    background-color: $primary-color;
-    color: white;
-
-    .cta {
-      background-color: white;
-      color: $font-color;
-    }
   }
 }
 
@@ -80,7 +71,7 @@ address {
   padding-right: 3em;
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
-  border-radius: 0.25rem;
+  //border-radius: 0.25rem;
 
   &:hover {
     background-color: lighten($primary-color, 10%);
@@ -174,26 +165,6 @@ main {
   }
 }
 
-// WELCOME SECTION
-
-.welcome {
-  text-align: center;
-
-  p {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-  }
-
-  hr {
-    width: 60%;
-    margin: auto;
-    background-color: $font-color;
-    opacity: 0.5;
-  }
-}
-
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -201,7 +172,7 @@ main {
 
   .card {
     min-height: 500px;
-    border-radius: 0.25rem;
+    //border-radius: 0.25rem;
     box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
     //overflow: hidden;
 
@@ -351,18 +322,6 @@ main {
       text-align: center;
       margin: auto;
       margin-bottom: 1em;
-    }
-
-    ul {
-      list-style: none;
-      margin: 3em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      li:not(:last-child) {
-        margin-bottom: 2em;
-      }
     }
   }
 }

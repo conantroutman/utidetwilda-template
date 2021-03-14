@@ -1,0 +1,53 @@
+@import "main.scss";
+@import "_variables.scss";
+
+section {
+    &:nth-of-type(even):not(:first-child) {
+        background-color: $primary-color;
+        color: white;
+    
+        .cta {
+          background-color: white;
+          color: $font-color;
+        }
+      }
+}
+
+// WELCOME SECTION
+
+.welcome {
+  text-align: center;
+
+  p {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+  }
+
+  hr {
+    width: 60%;
+    margin: auto;
+    background-color: $font-color;
+    opacity: 0.5;
+  }
+}
+
+.booking-methods {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  .cta {
+    min-width: 100%;
+  }
+
+  /*li:not(:last-child) {
+    margin-bottom: 2em;
+  }*/
+}
