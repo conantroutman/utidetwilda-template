@@ -1,6 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import "_variables.scss";
-@import "components/navbar.scss";
+@import 'abstracts/variables';
+
+@import 'vendors/fontello.css';
+
+@import 'base/typography';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+
+@import 'components/buttons';
+@import 'components/cards';
+
+@import 'pages/home';
+@import 'pages/booking';
+@import 'pages/info';
+@import 'pages/gallery';
+
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -9,40 +24,13 @@
   //overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 4rem;
-  text-transform: uppercase;
-}
 
-h2 {
-  margin-bottom: 1em;
-}
-
-a:hover {
-  color: $primary-color;
-}
-
-p {
-  font-size: 1.25rem;
-  max-width: 75ch;
-}
-
-iframe {
-  // iframe leaves a gap at the bottom for some reason, this fixes it
-  margin-bottom: -5px;
-}
 
 section {
   article {
     padding-top: 4em;
     padding-bottom: 6em;
   }
-}
-
-address {
-  font-style: unset;
 }
 
 .container {
@@ -57,30 +45,7 @@ address {
   //font-size: 2rem;
 }
 
-.cta {
-  width: fit-content;
-  height: 3em;
-  line-height: 3em;
-  display: block;
-  background-color: $primary-color;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  padding-left: 3em;
-  padding-right: 3em;
-  box-sizing: border-box;
-  transition: 0.2s ease-in-out;
-  //border-radius: 0.25rem;
 
-  &:hover {
-    background-color: lighten($primary-color, 10%);
-    color: #fff;
-  }
-  i {
-    margin-right: 1rem;
-  }
-}
 
 .centered {
   text-align: center;
@@ -96,120 +61,7 @@ main {
 
 // HERO SECTION
 
-.hero {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  color: white;
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    margin-top: calc(75px + 4em);
-    margin-bottom: 1.5em;
-
-    img {
-      width: 460px;
-      height: auto;
-    }
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 2em;
-    text-align: center;
-  }
-
-  #scroll-arrow {
-    fill: #fff;
-    position: absolute;
-    bottom: 2rem;
-  }
-
-  .background {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-
-    .background-image {
-      width: inherit;
-      height: inherit;
-      background-image: url("../images/hero-background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    .logo {
-      img {
-        width: 100%;
-      }
-    }
-  }
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10em;
-
-  .card {
-    min-height: 500px;
-    //border-radius: 0.25rem;
-    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
-    //overflow: hidden;
-
-    .card-head {
-      overflow: hidden;
-      height: 33%;
-      display: block;
-      //background-image: url("../images/card-middag.png");
-      //background-position: center;
-      //background-size: cover;
-
-      picture {
-        display: block;
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-
-    .card-body {
-      height: calc((100% - 33%) - (3em * 2));
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      padding: 3em;
-
-      h3 {
-        margin-bottom: 2em;
-      }
-
-      .cta {
-        margin-top: auto;
-      }
-    }
-  }
-}
 
 // GRID SECTION
 
@@ -263,7 +115,7 @@ main {
       }
     }
 
-    .cta {
+    .button {
       margin-top: 2rem;
     }
   }
@@ -287,31 +139,6 @@ main {
   }
 }
 
-// PRICE SECTION
-
-#priser {
-  .prices-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    div {
-      margin: auto;
-      padding: 2em;
-      text-align: center;
-
-      h3 {
-        font-size: 2rem;
-        margin-bottom: 0.5em;
-      }
-
-      .price {
-        font-size: 4rem;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
 #boka {
   article {
     margin: auto;
@@ -326,68 +153,7 @@ main {
   }
 }
 
-// FOOTER
 
-footer {
-  background-color: $primary-color;
-  color: white;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-
-  a {
-    color: white;
-    display: block;
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  i {
-    color: #fff;
-    font-size: 2rem;
-  }
-}
-
-.footer-content {
-  width: 100%;
-
-  display: grid;
-  //gap: 4em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  div {
-    //margin: 0 auto;
-    margin-bottom: 2em;
-  }
-
-  .contact-info {
-    //text-align: center;
-
-    p,
-    a {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .footer-social {
-    ul {
-      display: flex;
-      flex-direction: row;
-      //justify-content: center;
-      gap: 2rem;
-    }
-  }
-}
-
-.copyright {
-  font-size: 12px;
-  opacity: 0.75;
-}
 
 /*.divider {
   width: 100%;

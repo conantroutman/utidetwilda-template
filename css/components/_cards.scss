@@ -1,0 +1,46 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+
+.card {
+    min-height: 500px;
+    //border-radius: 0.25rem;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+    //overflow: hidden;
+    background-color: #fff;
+}
+
+.card-head {
+    overflow: hidden;
+    height: 33%;
+    display: block;
+    //background-image: url("../images/card-middag.png");
+    //background-position: center;
+    //background-size: cover;
+
+    picture {
+        display: block;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.card-body {
+    height: calc((100% - 33%) - (3em * 2));
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 3em;
+
+    h3 {
+        margin-bottom: 2em;
+    }
+
+    .button {
+        margin-top: auto;
+    }
+}

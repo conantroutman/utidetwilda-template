@@ -1,0 +1,65 @@
+/*section {
+    &:nth-of-type(even):not(:first-child) {
+        background-color: $primary-color;
+        color: white;
+    
+        .cta {
+          background-color: white;
+          color: $font-color;
+        }
+      }
+}*/
+
+.booking-methods {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  .button {
+    min-width: 100%;
+  }
+
+  /*li:not(:last-child) {
+    margin-bottom: 2em;
+  }*/
+}
+
+.google-maps {
+  // iframe leaves a gap at the bottom for some reason, this fixes it
+  margin-bottom: -5px;
+}
+
+.section-welcome {
+  text-align: center;
+
+  p {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+  }
+
+  hr {
+    width: 60%;
+    margin: auto;
+    background-color: $font-color;
+    opacity: 0.5;
+  }
+}
+
+.section-cards {
+  background-color: $background-color;
+}
+
+.section-booking {
+
+}
+
+.section-directions {
+  background-color: $background-color;
+}
