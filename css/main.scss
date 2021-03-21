@@ -2,6 +2,7 @@
 
 @import 'vendors/fontello.css';
 
+@import 'base/base';
 @import 'base/typography';
 
 @import 'layout/footer';
@@ -31,13 +32,6 @@ section {
     padding-top: 4em;
     padding-bottom: 6em;
   }
-}
-
-.container {
-  width: $content-width;
-  margin: auto;
-  //padding-left: $page-margin;
-  //padding-right: $page-margin;
 }
 
 .section-heading {
