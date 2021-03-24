@@ -17,16 +17,41 @@ article {
     }
 }
 
+.article-header {
+    margin-bottom: 4em;
+
+    h1 {
+        margin-bottom: .5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+
+        .price {
+            font-size: 2rem;
+        }
+    }
+}
+
 .article-content {
     display: grid;
     grid-template-columns: 2fr 1.25fr;
-    gap: 1em;
+    row-gap: 2em;
 
     picture {
         height: 100%;
         overflow: hidden;
         img {
             width: 100%;
+        }
+    }
+
+    @include respond-to('medium') {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+
+        picture {
+            margin-bottom: 3em;
         }
     }
 }
@@ -36,8 +61,21 @@ article {
     color: white;
     padding: 4em;
 
-    ul, p {
+    h4 {
+        margin-bottom: 1em;
+    }
+
+    ul {
         margin-bottom: 2em;
+        padding-left: 1em;
+
+        p {
+            margin-bottom: .25rem;
+        }
+    }
+
+    @include respond-to('medium') {
+        padding: calc((100vw - #{$content-width-mobile}) / 2);
     }
 }
 

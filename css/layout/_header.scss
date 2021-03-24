@@ -11,6 +11,10 @@ header {
         align-items: center;
         height: 100%;
         justify-content: space-between;
+
+        @include respond-to('medium') {
+            justify-content: center;
+        }
     }
 
     .logo-nav {
@@ -60,7 +64,7 @@ header {
             }
         }
 
-        @include respond-to('small') {
+        @include respond-to('medium') {
             width: 100%;
             height: 100vh;
             position: absolute;
@@ -95,6 +99,7 @@ header {
 }
 
 .burger {
+    display: none;
     height: $navbar-height;
     width: $navbar-height;
     position: absolute;
@@ -106,12 +111,8 @@ header {
     .hamburger {
         z-index: 10;
     }
-}
 
-@media (max-width: 480px) {
-    header {
-        .container {
-            justify-content: center;
-        }
+    @include respond-to('medium') {
+        display: block;
     }
 }

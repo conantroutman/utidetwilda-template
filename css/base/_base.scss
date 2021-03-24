@@ -9,7 +9,14 @@ address {
     //padding-left: $page-margin;
     //padding-right: $page-margin;
 
-    @include respond-to('small') {
+    @include respond-to('medium') {
         width: 100%;
+    }
+}
+
+.text {
+    @include respond-to('medium') {
+        width: $content-width-mobile;
+        margin: auto;
     }
 }
