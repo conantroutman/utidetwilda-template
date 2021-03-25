@@ -75,7 +75,7 @@ article {
     }
 
     @include respond-to('medium') {
-        padding: calc((100vw - #{$content-width-mobile}) / 2);
+        padding: 4em calc((100vw - #{$content-width-mobile}) / 2);
     }
 }
 
@@ -85,5 +85,40 @@ article {
     overflow: hidden;
     img {
         width: 100%;
+    }
+}
+
+.dates {
+    background-color: $background-color;
+    padding: 4em;
+
+    @include respond-to('medium') {
+        padding: 4em calc((100vw - #{$content-width-mobile}) / 2);
+    }
+}
+
+.dates-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include respond-to('medium') {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+}
+
+.month {
+    h4 {
+        margin-bottom: 1em;
+        
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: .25em;
+        }
     }
 }

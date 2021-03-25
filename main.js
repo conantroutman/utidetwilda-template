@@ -26,9 +26,11 @@ function toggleMobileNav() {
 function openMobileNav() {
     mobileNav.classList.add('open');
     hamburgerButton.classList.add('is-active');
+    document.querySelector('body').style.overflowY = 'none';
 }
 
 function closeMobileNav() {
     mobileNav.classList.remove('open');
     hamburgerButton.classList.remove('is-active');
+    document.querySelector('body').style.overflowY = 'scroll';
 }

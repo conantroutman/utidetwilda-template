@@ -3,6 +3,11 @@ address {
     font-style: unset;
 }
 
+section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
 .container {
     width: $content-width;
     margin: auto;
