@@ -1688,10 +1688,13 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 10em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 960px) {
   .cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1702,6 +1705,7 @@ main {
 .card {
   margin: auto;
   max-width: 30rem;
+  min-width: 20rem;
   height: 700px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -1764,7 +1768,7 @@ main {
       }
 }*/
 .hero {
-  height: 100vh;
+  height: calc(100vh - 75px);
   width: 100%;
   position: relative;
   color: white;
@@ -1888,12 +1892,35 @@ main {
 }
 
 .section-directions {
-  background-color: #f5f5f5;
   padding-bottom: 0;
 }
 
 .section-directions iframe {
   margin-top: 4em;
+}
+
+.section-images {
+  background-color: #f5f5f5;
+}
+
+.section-images .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+@media (max-width: 640px) {
+  .section-images .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.section-images picture img {
+  width: 100%;
 }
 
 @media (max-width: 480px) {
@@ -1926,7 +1953,7 @@ article p {
 }
 
 .article-header h1 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .article-header h2 {
@@ -1981,7 +2008,7 @@ article p {
 }
 
 .infobox ul p {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 960px) {
@@ -1991,13 +2018,17 @@ article p {
 }
 
 .header-image {
-  display: block;
   height: 20em;
-  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
-.header-image img {
-  width: 100%;
+.header-image.middag {
+  background-image: url("../../images/middag.jpg");
+}
+
+.header-image.vandring {
+  background-image: url("../../images/skogsol.jpg");
 }
 
 .dates {
@@ -2036,7 +2067,7 @@ article p {
 }
 
 .month ul li {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 /*main {

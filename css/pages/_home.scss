@@ -11,28 +11,28 @@
 }*/
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - #{$navbar-height});
   width: 100%;
   position: relative;
   color: white;
   padding: 0;
 
   .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1 {
-      font-size: 2rem;
-      margin-bottom: 2em;
-      text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2em;
+    text-align: center;
   }
 
   #scroll-arrow {
-      fill: #fff;
-      position: absolute;
-      bottom: 2rem;
+    fill: #fff;
+    position: absolute;
+    bottom: 2rem;
   }
 }
 
@@ -41,8 +41,8 @@
   margin-bottom: 1.5em;
 
   img {
-  width: 460px;
-  height: auto;
+    width: 460px;
+    height: auto;
   }
 }
 
@@ -56,13 +56,13 @@
   overflow: hidden;
 
   .background-image {
-  width: inherit;
-  height: inherit;
-  background-image: url("../images/hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 }
 
@@ -83,7 +83,7 @@
     margin-bottom: 2em;
   }*/
 
-  @include respond-to('small') {
+  @include respond-to("small") {
     flex-direction: column;
 
     .button {
@@ -104,7 +104,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    
   }
 
   hr {
@@ -120,11 +119,10 @@
 }
 
 .section-booking {
-
 }
 
 .section-directions {
-  background-color: $background-color;
+  //background-color: $background-color;
   padding-bottom: 0;
 
   iframe {
@@ -132,16 +130,37 @@
   }
 }
 
+.section-images {
+  background-color: $background-color;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
+    @include respond-to("small") {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+
+  picture {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
-      h1 {
-          font-size: 1.5rem;
-      }
+    h1 {
+      font-size: 1.5rem;
+    }
   }
-  
+
   .logo {
-      img {
-          width: 100%;
-      }
+    img {
+      width: 100%;
+    }
   }
 }
