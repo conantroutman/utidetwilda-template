@@ -1565,7 +1565,7 @@ nav .nav-links li a, nav .nav-social li a {
 }
 
 nav .nav-links li a:hover, nav .nav-social li a:hover {
-  text-decoration: underline;
+  color: #EF4136;
 }
 
 nav .nav-links li i, nav .nav-social li i {

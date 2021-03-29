@@ -42,7 +42,8 @@ nav {
                 font-weight: 600;
     
                 &:hover {
-                    text-decoration: underline;
+                    //text-decoration: underline;
+                    color: $primary-color;
                 }
             }
     

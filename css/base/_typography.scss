@@ -25,10 +25,10 @@ h2 {
 
 a {
   color: $primary-color;
-}
 
-a:hover {
-  color: $primary-color;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 p, a {
