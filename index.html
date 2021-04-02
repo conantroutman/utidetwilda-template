@@ -8,6 +8,7 @@
     <meta name="description" content="Uti det Wilda är ett kreativt matäventyr. Att äta hos oss är något utöver det vanliga. Du kan förvänta dig god och vällagad mat – men också ovanliga ingredienser från skog och trädgård som du kanske inte ätit förr; vilda örter, blad och blommor. Kött och fisk från närliggande sjöar och betesmarker tillagas vid elden och äts utomhus.">
     <title>Uti Det Wilda</title>
     <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\sal.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 </head>
@@ -23,13 +24,14 @@
                     <li><a href="index.html" class="nav-link">Hem</a></li>
                     <li><a href="middagar.html" href="_blank" class="nav-link">Middagar</a></li>
                     <li><a href="vandringar.html" href="_blank" class="nav-link">Vandringar</a></li>
+                    <li><a data-scroll href="omoss.html" class="nav-link">Om oss</a></li>
                     <li><a data-scroll href="#boka" class="nav-link">Boka</a></li>
                     <li><a data-scroll href="#footer" class="nav-link">Kontakt</a></li>
-                    <li><a href="dummy.zip" class="nav-link">Presskit</a></li>
+                    <!--<li><a href="dummy.zip" class="nav-link">Presskit</a></li>-->
                     <!--<li><a href="galleri.html">Bildgalleri</a></li>-->
                 </ul>
                 <ul class="nav-social">
-                    <li><a href="https://www.facebook.com/wilda.utidetwilda" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/utidetwilda" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://instagram.com/uti_det_wilda" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </nav>
@@ -45,13 +47,25 @@
     <main>
         <section class="hero">
             <div class="container">
-                <div class="logo">
+                <div class="logo"
+                    data-sal-duration="700"
+                    data-sal="slide-up"
+                    data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
                     <img src="images/wildas_svart.svg" alt="">
                 </div>
     
-                <h1 class="tagline">En underbar matupplevelse vid sjön Unden</h1>
+                <h1 class="tagline"
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="1000"
+                    data-sal-easing="ease-out-bounce">En underbar matupplevelse vid sjön Unden</h1>
     
-                <a data-scroll href="#boka" class="button button-primary">Boka nu</a>
+                <a data-scroll href="#boka" class="button button-primary"
+                    data-sal-duration="2000"
+                    data-sal="fade"
+                    data-sal-easing="ease-out-bounce"
+                    style="--sal-delay: 1.5s;">Boka nu</a>
     
                 <svg xmlns="http://www.w3.org/2000/svg" id="scroll-arrow" width="24" height="27.186" viewBox="0 0 24 27.186">
                     <g id="scroll-arrow-group" data-name="Group 1362" transform="translate(-948 -1019.477)">
@@ -69,7 +83,11 @@
         </section>
         <section class="section-welcome">
             <div class="container">
-                <article class="reveal">
+                <article
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce">
                     <div class="text">
                         <h1>Välkommen till Uti det Wilda!</h1>
                         <p class="welcome-text"><strong>Uti det Wilda</strong> är ett kreativt matäventyr. Att äta hos oss är något utöver det vanliga. Du kan förvänta dig god och vällagad mat – men också ovanliga ingredienser från skog och trädgård som du kanske inte ätit förr; vilda örter, blad och blommor. Kött och fisk från närliggande sjöar och betesmarker tillagas vid elden och äts utomhus.</p>
@@ -78,15 +96,21 @@
             </div>
         </section>
 
-        <div class="divider"></div>
-
         <section class="section-cards">
             <div class="container">
                 <article class="reveal">
-                    <h1 class="section-heading">Vad vi erbjuder</h1>
+                    <h1 class="section-heading"
+                        data-sal-duration="1200"
+                        data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce">Vad vi erbjuder</h1>
 
                     <div class="cards">
-                        <div class="card">
+                        <div class="card"
+                        data-sal-duration="1200"
+                        data-sal="slide-up"
+                        data-sal-delay="400"
+                        data-sal-easing="ease-out-bounce">
                             <div class="card-head">
                                 <picture>
                                     <img src="images/middag.jpg" alt="">
@@ -98,7 +122,11 @@
                                 <a href="middagar.html" target="_blank" class="button button-primary">Läs mer</a>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card"
+                        data-sal-duration="1200"
+                        data-sal="slide-up"
+                        data-sal-delay="600"
+                        data-sal-easing="ease-out-bounce">
                             <div class="card-head">
                                 <picture>
                                     <img src="images/skogsol.jpg" alt="">
@@ -114,80 +142,15 @@
                 </article>
             </div>
         </section>
-
-        <!--
-        <section>
-            <div class="grid">
-
-                <article class="grid-item grid-item1">
-                    <h2>Wildamiddagar</h2>
-                    <p><strong>Sommaren 2021</strong> erbjuder vi en serie bokningsbara wildamiddagar. Middagarna äger rum utomhus och går att kombinera med vandringar eller andra utflykter i närområdet.</p>
-                    <div class="price-area">
-                        <p>Pris: <span class="price">950 kr</span></p>
-                    </div>
-                    <a href="middagar.html" class="button button-primary">Läs mer</a>
-                </article>
-                
-                <div class="grid-item grid-item2">
-                    <img src="images/middag.jpeg" alt="" loading="lazy">
-                </div>
-
-                <div class="grid-item grid-item4">
-                    <img src="images/skogsväg.jpg" alt="" loading="lazy">
-                </div>
-
-                <article class="grid-item grid-item3">
-                    <h2>Wildavandringar</h2>
-                    <p><strong>Våren 2021</strong> erbjuder vi avkopplande vandringar med efterföljande trerätters middag vid Undens strand.</p>
-                    <div class="price-area">
-                        <p>Pris: <span class="price">600 kr</span></p>
-                    </div>
-                    <a href="utflykter.html" class="button button-primary">Läs mer</a>
-                </article>
-
-                <article class="grid-item grid-item5">
-                    <h2>Vilka är vi?</h2>
-                    <p>Wilda är <strong>Helena Hallerhed</strong> och <strong>Sandra Isaksson</strong>. Med ett förflutet i matlagning, utbildning, musik, formgivning och äventyr är vi förenade av våra Hallerudsrötter och av ett genuint intresse för högkvalitativ, närproducerad mat och naturliga wilda ingredienser.</p>
-                    <p>Vår barndom, vår uppväxt och vårt ursprung avspeglas i vår mat. Vi tror på att göra all vår mat från start med så få genvägar som möjligt. Vi använder lokalt producerad mat, vilda örter, blommor och växter. Kött och grönt från lokala producenter och fisk från närliggande sjöar.</p>
-                </article>
-
-                <div class="grid-item grid-item6">
-                    <img src="images/sandrahelena.jpg" alt="Helena Hallerhed och Sandra Isaksson" loading="lazy">
-                </div>
-
-            </div>
-        </section>
-        -->
-        <!--
-        <section id="priser">
-            <div class="container">
-                <article>
-
-                    <h1 class="section-heading">Våra priser</h1>
-
-                    <div class="prices-grid">
-
-                        <div>
-                            <h3>Wildamiddag</h3>
-                            <p class="price">950 kr</p>
-                        </div>
-
-                        <div>
-                            <h3>Wildavandring</h3>
-                            <p class="price">600 kr</p>
-                        </div>
-
-                    </div>
-
-                </article>
-            </div>
-        </section>
-        -->
         
         <section id="boka" class="section-booking">
             <div class="container">
                 <article>
-                    <div class="text">
+                    <div class="text"
+                        data-sal-duration="1200"
+                        data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce">
                         <h1 class="section-heading">Boka</h1>
                         <p>För bokning, kontakta oss via mail, telefon eller meddela oss på Facebook.</p>
                         <p>Betalning sker via Swish eller bankgiro direkt efter att bokningen är bekräftat.</p>
@@ -196,9 +159,21 @@
                     </div>
                     
                     <ul class="booking-methods">
-                        <li class="mobile-only"><a href="tel:+4673591866" target="_blank" class="button" ><i class="fas fa-phone"></i>Boka via telefon</a></li>
-                        <li><a href="mailto:info@utidetwilda.se" target="_blank" class="button"><i class="fas fa-envelope"></i>Boka via mail</a></li>
-                        <li><a href="https://m.me/utidetwilda" target="_blank" class="button"><i class="fab fa-facebook-messenger"></i>Boka via Facebook</a></li>
+                        <li class="mobile-only"
+                            data-sal-duration="1200"
+                            data-sal="slide-up"
+                            data-sal-delay="400"
+                            data-sal-easing="ease-out-bounce"><a href="tel:+4673591866" target="_blank" class="button" ><i class="fas fa-phone"></i>Boka via telefon</a></li>
+                        <li
+                            data-sal-duration="1200"
+                            data-sal="slide-up"
+                            data-sal-delay="600"
+                            data-sal-easing="ease-out-bounce"><a href="mailto:info@utidetwilda.se" target="_blank" class="button"><i class="fas fa-envelope"></i>Boka via mail</a></li>
+                        <li
+                            data-sal-duration="1200"
+                            data-sal="slide-up"
+                            data-sal-delay="800"
+                            data-sal-easing="ease-out-bounce"><a href="https://m.me/utidetwilda" target="_blank" class="button"><i class="fab fa-facebook-messenger"></i>Boka via Facebook</a></li>
                     </ul>
                 </article>
             </div>
@@ -206,15 +181,27 @@
 
         <section id="images" class="section-images">
             <div class="container">
-                <picture loading="lazy">
+                <picture loading="lazy"
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce">
                     <source srcset="images/sten_m.jpg" media="(max-width: 960px)">
                     <img src="images/sten.jpg" alt="">
                 </picture>
-                <picture>
+                <picture
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="400"
+                    data-sal-easing="ease-out-bounce">
                     <source srcset="images/tallrik_m.jpg" media="(max-width: 960px)">
                     <img src="images/tallrik.jpg" alt="">
                 </picture>
-                <picture>
+                <picture
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="600"
+                    data-sal-easing="ease-out-bounce">
                     <source srcset="images/planka_m.jpg" media="(max-width: 960px)">
                     <img src="images/planka.jpg" alt="">
                 </picture>
@@ -223,7 +210,11 @@
 
         <section class="section-directions">
             <div class="container">
-                <article>
+                <article
+                    data-sal-duration="1200"
+                    data-sal="slide-up"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce">
                     <div class="text">
                         <h1 class="section-heading">Hitta till oss</h1>
                         <p class="centered">Vårt utomhuskök och sommarrestaurang ligger vackert beläget intill vattnet vid sjön Unden, <strong>Hallerudsund</strong>, i utkanten av Töreboda kommun, nära Tivedens Nationalpark.</p>
@@ -254,7 +245,7 @@
                     <h2>Följ oss</h2>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/wilda.utidetwilda" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/utidetwilda" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/uti_det_wilda/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -269,7 +260,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.min.js" integrity="sha512-L56hqljAjZhvB9f32klSO2ltXUlKbaOY2KdlNLOdzxJtl0jNvNQFKTP3u0MIFUP3mXTzYdy7KCaUSvi7QBWxNg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="index.js"></script>
+    <script src="js/sal.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
