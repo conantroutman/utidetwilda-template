@@ -46,7 +46,7 @@
         "components/_cards.scss",
         "pages/_home.scss",
         "pages/_booking.scss",
-        "pages/_info.scss",
+        "pages/_page.scss",
         "pages/_gallery.scss"
     ],
     "names": [],
